@@ -331,7 +331,11 @@ public class GameSettings
         this.loadOptions();
         Config.initGameSettings(this);
     }
-   
+    
+    private void addClientKeybinds() {
+    	this.keyBindings = ((KeyBinding[])ArrayUtils.add(this.keyBindings, this.TOGGLE_SPRINT));
+	}
+
     public GameSettings()
     {
         this.mc = (KeyBinding[])((KeyBinding[])ArrayUtils.addAll(new KeyBinding[] {this.keyBindPickBlock, this.keyBindDrop, this.keyBindLeft, this.keyBindBack, this.keyBindRight, this.keyBindJump, this.keyBindSneak, this.keyBindSprint, this.keyBindInventory, this.keyBindAttack, this.keyBindUseItem, this.keyBindPlayerList, this.keyBindCommand, this.keyBindChat, this.keyBindScreenshot, this.keyBindTogglePerspective, this.keyBindSmoothCamera, this.keyBindFullscreen, this.keyBindStreamPauseUnpause, this.keyBindStreamCommercials, this.keyBindStreamToggleMic, this.keyBindsHotbar, this.keyBindSpectatorOutlines, this.keyBindStreamStartStop}, this.keyBindings));
@@ -340,13 +344,7 @@ public class GameSettings
         this.gammaSetting = 70.0F;
         this.forceUnicodeFont = "en_US";
         this.logger = false;
-        addClientKeybinds();
     }
-    
-    private void addClientKeybinds() {
-    	this.keyBindings = ((KeyBinding[])ArrayUtils.add(this.keyBindings, this.TOGGLE_SPRINT));
-	}
-
 
     /**
      * Represents a key or mouse button as a string. Args: key
