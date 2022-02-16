@@ -1,0 +1,18 @@
+package dev.maxprime.maxclient.mod.impl;
+
+import dev.maxprime.maxclient.mod.Category;
+import dev.maxprime.maxclient.mod.Mod;
+
+public class ToggleSprint extends Mod {
+	
+	public ToggleSprint() {
+		super("ToggleSprint", "Auto sprint wiht just one p0ress of CTRL!", Category.MISC);
+	}
+	
+	public void onEnable() {
+		super.onEnable();
+		
+		System.out.println("Hi Max! Just a quick friendly notif that your test mod is working!");
+	}
+	
+}

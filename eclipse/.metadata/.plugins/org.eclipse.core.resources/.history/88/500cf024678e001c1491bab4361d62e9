@@ -1,0 +1,19 @@
+package dev.maxprime.maxclient;
+
+public class MaxClient {
+	
+	public String NAME = "MaxPvP Client", VERSION = "0.0.1", AUTHOR = "Maxi_JP";
+	public MaxClient INSTANCE = new MaxClient();
+	
+	
+	private void startup() {
+		System.out.println("Starting "+ NAME + " " + VERSION + " by "+ AUTHOR);
+
+	}
+	
+	private void shutdown() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

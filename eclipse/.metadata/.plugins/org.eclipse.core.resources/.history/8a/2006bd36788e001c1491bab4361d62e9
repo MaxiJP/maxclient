@@ -1,0 +1,30 @@
+package dev.maxprime.maxclient;
+
+import dev.maxprime.maxclient.event.EventManager;
+import dev.maxprime.maxclient.mod.ModManager;
+
+public class MaxClient {
+	
+	public String NAME = "MaxPvP Client", VERSION = "0.0.1", AUTHOR = "Maxi_JP", NAMEVER = NAME + " " + VERSION;
+	public static MaxClient INSTANCE = new MaxClient();
+	
+	public EventManager eventManager;
+	public ModManager modManager;
+	
+	public void startup() {
+		eventManager = new EventManager();
+		modManager = new ModManager();
+		
+		System.out.println("Starting " + NAMEVER + " by "+ AUTHOR);
+		
+		eventManager.register(this);
+
+	}
+	
+	public void shutdown() {
+		System.out.println("Shutting down " + NAMEVER);
+		
+		eventManager.unregister(this);
+	}
+
+}

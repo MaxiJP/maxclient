@@ -1,0 +1,18 @@
+package dev.maxprime.maxclient.mod;
+
+import java.util.ArrayList;
+
+import dev.maxprime.maxclient.mod.impl.*;
+
+public class ModManager {
+	
+	public ArrayList<Mod> mods;
+	
+	public ModManager() {
+		mods = new ArrayList<>();
+		
+		// Misc
+		mods.add(new TestMod());
+	}
+
+}

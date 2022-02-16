@@ -1,0 +1,96 @@
+---- Minecraft Crash Report ----
+// Don't do that.
+
+Time: 16/02/2022, 09:55
+Description: Rendering screen
+
+java.lang.NullPointerException: Cannot invoke "net.minecraft.client.gui.GuiListExtended$IGuiListEntry.setSelected(int, int, int)" because the return value of "net.minecraft.client.gui.GuiListExtended.getListEntry(int)" is null
+	at net.minecraft.client.gui.GuiListExtended.func_178040_a(GuiListExtended.java:38)
+	at net.minecraft.client.gui.GuiSlot.drawSelectionBox(GuiSlot.java:458)
+	at net.minecraft.client.gui.GuiSlot.drawScreen(GuiSlot.java:245)
+	at net.minecraft.client.gui.GuiControls.drawScreen(GuiControls.java:160)
+	at net.minecraft.client.renderer.EntityRenderer.updateCameraAndRender(EntityRenderer.java:1398)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1154)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:430)
+	at net.minecraft.client.main.Main.main(Main.java:113)
+	at Start.main(Start.java:11)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at net.minecraft.client.gui.GuiListExtended.func_178040_a(GuiListExtended.java:38)
+	at net.minecraft.client.gui.GuiSlot.drawSelectionBox(GuiSlot.java:458)
+	at net.minecraft.client.gui.GuiSlot.drawScreen(GuiSlot.java:245)
+	at net.minecraft.client.gui.GuiControls.drawScreen(GuiControls.java:160)
+
+-- Screen render details --
+Details:
+	Screen name: net.minecraft.client.gui.GuiControls
+	Mouse location: Scaled: (306, 135). Absolute: (613, 209)
+	Screen size: Scaled: (427, 240). Absolute: (854, 480). Scale factor of 2
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityPlayerSP['Max'/0, l='MpServer', x=-0.09, y=102.00, z=2.03]]
+	Chunk stats: MultiplayerChunkCache: 30, 30
+	Level seed: 0
+	Level generator: ID 01 - flat, ver 0. Features enabled: false
+	Level generator options: 
+	Level spawn location: -433.00,4.00,1820.00 - World: (-433,4,1820), Chunk: (at 15,0,12 in -28,113; contains blocks -448,0,1808 to -433,255,1823), Region: (-1,3; contains chunks -32,96 to -1,127, blocks -512,0,1536 to -1,255,2047)
+	Level time: 7855 game time, 7855 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: false
+	Forced entities: 1 total; [EntityPlayerSP['Max'/0, l='MpServer', x=-0.09, y=102.00, z=2.03]]
+	Retry entities: 0 total; []
+	Server brand: vanilla
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:403)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2784)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:451)
+	at net.minecraft.client.main.Main.main(Main.java:113)
+	at Start.main(Start.java:11)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.8.9
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 15.0.2, Oracle Corporation
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 752276128 bytes (717 MB) / 1073741824 bytes (1024 MB) up to 1073741824 bytes (1024 MB)
+	JVM Flags: 3 total; -Xmx1024M -Xms1024M -XX:+ShowCodeDetailsInExceptionMessages
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	Launched Version: mcp
+	LWJGL: 2.9.1
+	OpenGL: NVIDIA GeForce GTX 1660 Ti/PCIe/SSE2 GL version 4.6.0 NVIDIA 472.47, NVIDIA Corporation
+	GL Caps: Using GL 1.3 multitexturing.
+Using GL 1.3 texture combiners.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Shaders are available because OpenGL 2.1 is supported.
+VBOs are available because OpenGL 1.5 is supported.
+
+	Using VBOs: No
+	Is Modded: Very likely; Jar signature invalidated
+	Type: Client (map_client.txt)
+	Resource Packs: 
+	Current Language: English (UK)
+	Profiler Position: N/A (disabled)
+	CPU: 12x Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz
+	OptiFine Version: OptiFine_1.8.9_HD_U_M5
+	OptiFine Build: ~~NULL~~
+	Render Distance Chunks: 2
+	Mipmaps: 4
+	Anisotropic Filtering: 1
+	Antialiasing: 0
+	Multitexture: false
+	Shaders: null
+	OpenGlVersion: 4.6.0 NVIDIA 472.47
+	OpenGlRenderer: NVIDIA GeForce GTX 1660 Ti/PCIe/SSE2
+	OpenGlVendor: NVIDIA Corporation
+	CpuCount: 12

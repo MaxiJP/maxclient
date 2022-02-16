@@ -1,0 +1,17 @@
+package dev.maxprime.maxclient.mod.impl;
+
+import dev.maxprime.maxclient.mod.Category;
+import dev.maxprime.maxclient.mod.Mod;
+
+public class TestMod extends Mod {
+	
+	public TestMod() {
+		super("TestMod", "Max's first mod in MaxClient (which is just a test lul)", Category.MISC);
+	}
+	
+	private void onEnable() {
+		super.onEnable();
+
+	}
+	
+}

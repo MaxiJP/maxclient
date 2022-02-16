@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="dev.maxprime.maxclient.event.EventManager"/>
+    <fullyQualifiedTypeName name="dev.maxprime.maxclient.event.Event"/>
+    <fullyQualifiedTypeName name="dev.maxprime.maxclient.MaxClient"/>
+    <fullyQualifiedTypeName name="dev.maxprime.maxclient.mod.Category"/>
+    <fullyQualifiedTypeName name="dev.maxprime.maxclient.mod.ModManager"/>
+    <fullyQualifiedTypeName name="dev.maxprime.maxclient.mod.impl.TestMod"/>
+    <fullyQualifiedTypeName name="dev.maxprime.maxclient.event.impl.ClientTick"/>
+    <fullyQualifiedTypeName name="net.minecraft.client.Minecraft"/>
+    <fullyQualifiedTypeName name="dev.maxprime.maxclient.event.EventTarget"/>
+    <fullyQualifiedTypeName name="dev.maxprime.maxclient.event.impl.EventUpdate"/>
+</qualifiedTypeNameHistroy>
